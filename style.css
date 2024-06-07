@@ -1,0 +1,27 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root {
+    --background-primary: #EBECEE;
+    --background-second: #be8a62;
+    --focusTitulos-primary: #5c4216;
+    --focusTitulos-second: #A66933;
+    --font-principal: "Poppins";
+    --font-secundaria: "Josefin Sans";
+}
+
+body {
+    background-color: var(--background-primary);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container__botao {
+    display: none;
+}
+

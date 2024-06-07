@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Café com Livros</title>
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+
+      <label for="menu" class="container__rotulo">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="menu" viewBox="0 0 16 16" color="white">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+
+     </label>
+
+     <ul class="lista-menu">
+      <li class="lista-menu__titulo">Categoria</li>
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-End</a></li>
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li> 
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+      <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+     </ul>
+     
+      <img src="img/logoMobile.png" alt="Logo de Café com Livros" class="logo">
+      <h1 class="container__titulo">Café com <b class="container__titulo--negrito">Livros</b></h1>
+    </div>
+
+    <ul class="opcoes">
+      <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+      <label for="opcoes-menu" class="opcoes__rotulo">
+        <li class="opcoes__item">Categoria</li>
+      </label>
+
+      <ul class="lista-menu">
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-End</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li> 
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+       </ul>
+
+      <li class="opcoes__item"><a href="" class="opcoes__link">Favoritos</a></li>
+      <li class="opcoes__item"><a href="" class="opcoes__link">Minha estante</a></li>
+    </ul>
+    
+    <div class="container">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height=30" fill="currentColor" class="container__imagem container__imagem-transparente" viewBox="0 0 16 16" color="white">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
+      </a>
+
+      <a href="#" class="container__link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="container__imagem" viewBox="0 0 16 16" color="white">
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg>
+        <p class="container__texto">Minha sacola</p>
+      </a>
+
+      <a href="#"  class="container__link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="container__imagem" viewBox="0 0 16 16" color="white">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg>
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+  
+  <section section="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Lideranc╠ºa.svg" alt="Livro sobre liderança em tecnologia de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Javascript.svg" alt="Livro sobre Java Script assertivo de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Livro sobre Guia Front-End de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Livro sobre Portugol de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade de Café com Livros">
+          </div>
+      
+        </div>
+      
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descricao__texto">Construíndo uma aplicação integrada com a plataforma do Google</p>
+          </div>
+          <img src="img/Angular.svg" alt="Logo Angular" class="descricao__imagem">
+        </div>
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height=30" fill="currentColor" viewBox="0 0 16 16" color="#5c4216" >
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
+            </li>
+            <li class="botoes__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" color="#5c4216" style="margin-top: 5px;">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg>
+            </li>
+          </ul>
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section section="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Lideranc╠ºa.svg" alt="Livro sobre liderança em tecnologia de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Javascript.svg" alt="Livro sobre Java Script assertivo de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Livro sobre Guia Front-End de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Livro sobre Portugol de Café com Livros">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade de Café com Livros">
+          </div>
+      
+        </div>
+      
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <img src="img/Estrelinhas.svg" alt="estrelinhas de avaliaçãao" class="avaliação">
+            <h3 class="descricao__titulo">Autora do Mês</h3>
+            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+          </div>
+          <img src="img/Escritora.svg" alt="Juliana Agarikov" class="descricao__imagem">
+        </div>
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height=30" fill="currentColor" viewBox="0 0 16 16" color="#5c4216" >
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
+            </li>
+            <li class="botoes__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" color="#5c4216" style="margin-top: 5px;">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg>
+            </li>
+          </ul>
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="topicos">
+    <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+    <ul class="topicos__lista">
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Android</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Marketing Digital</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Agile</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Startups</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">HTML & CSS</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Python</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">OO</a>
+      </li>
+      <li class="topicos__item">
+        <a href="#" class="topicos__link">Java</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descricao">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    </div>
+
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr>
+
+  <footer class="rodape">
+    <h2 class="rodape__titulo">CanonVitória</h2>
+
+    <ul class="lista-rodape">
+      <li class="lista-rodape__titulo">Educação</li>
+      <li class="lista-rodape__item">
+        <img src="img/CasaDoCodigo.svg" alt="Casa do código logo">
+        <a href="#" class="lista-rodape__link">Casa do código</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/Caelum.svg" alt="Caelum logo">
+        <a href="#" class="lista-rodape__link">Caelum</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodape">
+      <li class="lista-rodape__titulo">Educação online</li>
+      <li class="lista-rodape__item">
+        <img src="img/Alura.svg" alt="Alura logo">
+        <a href="#" class="lista-rodape__link">Alura</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/AluraEmpresas.svg" alt="Caelum logo">
+        <a href="#" class="lista-rodape__link">Alura Para Empresas</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/AluraLATAM.svg" alt="Alura LATAM logo">
+        <a href="#" class="lista-rodape__link">Alura LATAM</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/AluraStart.svg" alt="Alura Start logo">
+        <a href="#" class="lista-rodape__link">Alura Start</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/MusicDot.svg" alt="MusicDot logo">
+        <a href="#" class="lista-rodape__link">MusicDot</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/AluraLingua.svg" alt="Alura Língua logo">
+        <a href="#" class="lista-rodape__link">Alura Língua</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/PM3.svg" alt="PM3 logo">
+        <a href="#" class="lista-rodape__link">PM3</a>
+      </li>
+    </ul>
+    <ul class="lista-rodape">
+      <li class="lista-rodape__titulo">Comunidade</li>
+      <li class="lista-rodape__item">
+        <img src="img/HipstersTech.svg" alt="Hipster ponto tech logo">
+        <a href="#" class="lista-rodape__link">Hipster ponto Tech</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/ScubaDev.svg" alt="ScubaDev logo">
+        <a href="#" class="lista-rodape__link">Scuba Dev</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/LikeABoss.svg" alt="Like a Boss logo">
+        <a href="#" class="lista-rodape__link">Like a Boss</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/CarreiraSemFronteira.svg" alt="CarreiraSemFronteira">
+        <a href="#" class="lista-rodape__link">Carreira sem Fronteira</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/HipstersJobs.svg" alt="HipstersJobs logo">
+        <a href="#" class="lista-rodape__link">Hipsters ponto Jobs</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/GUJ.svg" alt="GUJ logo">
+        <a href="#" class="lista-rodape__link">GUJ</a>
+      </li>
+      <li class="lista-rodape__item">
+        <img src="img/LayersTech.svg" alt="LayersTech logo">
+        <a href="#" class="lista-rodape__link">Layers ponto Tech</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+</html>
